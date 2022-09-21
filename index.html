@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f15b73f987.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id = "selector-city-search">
+      <span><div class="row g-3 city-search">
+        <div class="col-sm-4">
+          <input id = "search-text-input"
+            type="text"
+            class="form-control"
+            placeholder="City...🔍"
+            aria-label="City"
+            autofocus="off"
+          /></form>
+        </div>
+    <button type="button" class="btn btn-light">Search</button>
+        <button type="button" class="btn btn-success"
+         id="button-current">Current</button></span>
+      </div>
+      </div>
+      <div class="current">
+        <h1>70°F</h1>
+        <p class="additional-weather"><ul><li>Rain: 10%</li><li>Humidity: 92%</li>><li>Wind: N 3 mph</li>></ul>>
+        <li><strong>72°</strong>/65°</li>></p>
+      </div>
+      <h2>Chicago</h2>
+      <h3>Tue 02:45:00 PM</h3>>
+      <h4>5-Day Weather Forecast</h4>
+      <form>
+        <div class="card forecast">
+          <div class="card-body">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  Mon
+                  <div class="temp"><strong>75°</strong>/68°</div>
+                  <div class="weather-icon">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  Tue
+                  <div class="temp"><strong>76°</strong>/67°</div>
+                  <div class="weather-icon">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  Wed
+                  <div class="temp"><strong>76°</strong>/66°</div>
+                  <div class="weather-icon">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  Thu
+                  <div class="temp"><strong>78°</strong>/66°</div>
+                  <div class="weather-icon">
+                    <i class="fa-solid fa-sun"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  Fri
+                  <div class="temp"><strong>81°</strong>/67°</div>
+                  <div class="weather-icon">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
