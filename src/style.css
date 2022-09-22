@@ -46,6 +46,21 @@ h4 {
   left: 44%;
 }
 
+footer {
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
+footer a {
+  color: yellow;
+}
+
+footer a:hover {
+  color: rgb(170, 170, 0);
+}
+
 h2,
 .col {
   font-family: "Corben", cursive;
