@@ -1,3 +1,9 @@
+ul {
+  flex-wrap: nowrap;
+  font-size: 1.2em;
+  list-style: none;
+}
+
 footer {
   text-align: right;
   padding: 0 10px 0 0;
@@ -12,14 +18,55 @@ footer {
   width: 85%;
 }
 
+.city-name {
+  font-size: 4.5em;
+  margin: 20px 20px 30px;
+  padding: 0 0 10px 0;
+}
+
+.city-search-bar {
+  box-sizing: border-box;
+  max-width: 250px;
+  position: fixed;
+  top: 125px;
+  right: 330px;
+}
+
+.search-city-btn {
+  position: fixed;
+  top: 125px;
+  right: 230px;
+}
+
+.get-current-btn {
+  position: fixed;
+  top: 175px;
+  right: 500px;
+}
+
 .box-body {
+  align-items: center;
   background: rgba(206, 206, 206, 0.096);
   backdrop-filter: saturate(180%) blur(10px);
   border-radius: 30px;
+  box-sizing: content-box;
   display: block;
+  height: 200px;
+  justify-content: center;
   margin: 0 auto;
-  padding: 50px 100px;
+  padding: 100px 10px 100px;
   width: 90%;
+}
+
+.current-temperature {
+  font-size: 6em;
+  padding: 0 0 30px;
+}
+
+.projected-forecast {
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 0 0 30px;
 }
 
 .card.forecast {
@@ -28,12 +75,26 @@ footer {
   border: none;
   border-radius: 30px;
   text-align: center;
-  max-width: 60%;
   display: block;
   margin: 0 auto;
+}
+
+.weather-temperature {
+  font-size: 3em;
+}
+
+.units {
+  font-size: 0.75em;
 }
 
 .forecast-day {
   color: #ffffff;
   font-size: 1.3em;
+}
+
+footer {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 145px;
+  right: 205px;
 }

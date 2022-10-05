@@ -19,93 +19,127 @@
   </head>
 
   <body>
-    <wrapper>
-      <div class="container">
-        <form>
-          <div class="card text-bg-dark background">
-            <img
-              src="images/night-mountain.jpg"
-              class="card-img"
-              alt="A white mountain stands tall behind a forest and under a purple and blue night sky, littered with stars. A comet streaks across the scene in the background."
+    <div class="container">
+      <form>
+        <div class="card text-bg-dark background">
+          <img
+            src="images/night-mountain.jpg"
+            class="card-img"
+            alt="A white mountain stands tall behind a forest and under a purple and blue night sky, littered with stars. A comet streaks across the scene in the background."
+          />
+          <div class="card-img-overlay">
+            <div class="city-name">Chicago</div>
+
+            <input
+              class="form-control city-search-bar"
+              type="text"
+              placeholder="Search for a city...🔍"
+              autocomplete="off"
+              autofocus="on"
+              aria-label="default input example"
             />
-            <div class="card-img-overlay">
-              <h1 class="city-name">Chicago</h1>
-              <div class="box-body">
-                <form class="forecast-form">
-                  <div class="card forecast">
-                    <div class="forecast-card-body">
-                      <div class="forecast-container">
-                        <div class="row">
-                          <div class="col-4 forecast-day">
-                            Mon
-                            <div class="forecast-temp">
-                              <strong>66°</strong>/43°
-                            </div>
-                            <div class="weather-icon">
-                              <i class="fa-solid fa-cloud-sun"></i>
-                            </div>
-                          </div>
-                          <div class="col-4 forecast-day">
-                            Tue
-                            <div class="forecast-temp">
-                              <strong>65°</strong>/43°
-                            </div>
-                            <div class="weather-icon">
-                              <i class="fa-solid fa-cloud"></i>
-                            </div>
-                          </div>
-                          <div class="col-4 forecast-day">
-                            Wed
-                            <div class="forecast-temp">
-                              <strong>76°</strong>/57°
-                            </div>
-                            <div class="weather-icon">
-                              <i class="fa-solid fa-cloud-sun"></i>
-                            </div>
-                          </div>
-                          <div class="col-4 forecast-day">
-                            Thu
-                            <div class="forecast-temp">
-                              <strong>69°</strong>/50°
-                            </div>
-                            <div class="weather-icon">
-                              <i class="fa-solid fa-cloud-sun"></i>
-                            </div>
-                          </div>
-                          <div class="col-4 forecast-day">
-                            Fri
-                            <div class="forecast-temp">
-                              <strong>68°</strong>/47°
-                            </div>
-                            <div class="weather-icon">
-                              <i class="fa-solid fa-cloud-sun"></i>
-                            </div>
-                          </div>
-                          <div class="col-4 forecast-day">
-                            Sat
-                            <div class="forecast-temp">
-                              <strong>66°</strong>/43°
-                            </div>
-                            <div class="weather-icon">
-                              <i class="fa-solid fa-cloud-sun"></i>
+            <button type="button" class="btn btn-light search-city-btn">
+              Search
+            </button>
+            <button type="button" class="btn btn-light get-current-btn">
+              Current
+            </button>
+            <div class="box-body">
+              <div class="box-container text-center">
+                <div class="row">
+                  <div class="col-sm-3 current-weather">
+                    <div class="current-temperature">70 °C | °F</div>
+                    <ul>
+                      <li>
+                        <span class="precipitation">Precipitation: 1%</span>
+                      </li>
+
+                      <li><span class="humidity">Humidity: 75%</span></li>
+                      <li><span class="wind">Wind: 0 mph</span></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-sm-9">
+                    <div class="projected-forecast">
+                      5-Day Projected Forecast
+                    </div>
+                    <form class="forecast-form">
+                      <div class="card forecast">
+                        <div class="forecast-card-body">
+                          <div class="forecast-container">
+                            <div class="row">
+                              <div class="col-4 forecast-day">
+                                Mon
+                                <div class="forecast-temp">
+                                  <strong>66°</strong>/43°
+                                </div>
+                                <div class="weather-icon">
+                                  <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                              </div>
+                              <div class="col-4 forecast-day">
+                                Tue
+                                <div class="forecast-temp">
+                                  <strong>65°</strong>/43°
+                                </div>
+                                <div class="weather-icon">
+                                  <i class="fa-solid fa-cloud"></i>
+                                </div>
+                              </div>
+                              <div class="col-4 forecast-day">
+                                Wed
+                                <div class="forecast-temp">
+                                  <strong>76°</strong>/57°
+                                </div>
+                                <div class="weather-icon">
+                                  <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                              </div>
+                              <div class="col-4 forecast-day">
+                                Thu
+                                <div class="forecast-temp">
+                                  <strong>69°</strong>/50°
+                                </div>
+                                <div class="weather-icon">
+                                  <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                              </div>
+                              <div class="col-4 forecast-day">
+                                Fri
+                                <div class="forecast-temp">
+                                  <strong>68°</strong>/47°
+                                </div>
+                                <div class="weather-icon">
+                                  <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                              </div>
+                              <div class="col-4 forecast-day">
+                                Sat
+                                <div class="forecast-temp">
+                                  <strong>66°</strong>/43°
+                                </div>
+                                <div class="weather-icon">
+                                  <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </form>
                   </div>
-                </form>
+                </div>
               </div>
-              <footer class="open-source-text">
-                <a href="https://github.com/cmhendr/weather-app" target="_blank"
-                  ><small>Open-source code</small></a
-                ><small> by Candace Hendricks</small>
-              </footer>
             </div>
+            <footer class="open-source-text">
+              <a href="https://github.com/cmhendr/weather-app" target="_blank"
+                ><small>Open-source code</small></a
+              ><small> by Candace Hendricks</small>
+            </footer>
           </div>
-        </form>
-      </div>
-    </wrapper>
+        </div>
+      </form>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>

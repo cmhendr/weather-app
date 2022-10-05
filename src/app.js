@@ -20,6 +20,15 @@ let day = days[now.getDay()];
 let h3 = document.querySelector("h3");
 h3.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayTemperature(response) {
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/un/${response.data.weather[0].icon}@2xpng`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+}
+
 function showTemperature(response) {
   document.querySelector("h1").innerHTML = `${Math.round(
     response.data.main.temp
