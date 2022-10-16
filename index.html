@@ -16,6 +16,12 @@
       src="https://kit.fontawesome.com/f15b73f987.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -38,28 +44,32 @@
               autofocus="on"
               aria-label="default input example"
             />
-            <button type="button" class="btn btn-light search-city-btn">
+            <button type="button" class="btn btn-light btn-search">
               Search
             </button>
-            <button type="button" class="btn btn-light get-current-btn">
+            <button type="button" class="btn btn-warning btn-current">
               Current
             </button>
+
             <div class="box-body">
               <div class="box-container text-center">
                 <div class="row">
-                  <div class="col-sm-3 current-weather">
-                    <div class="current-temperature">70 °C | °F</div>
-                    <ul>
-                      <li>
-                        <span class="precipitation">Precipitation: 1%</span>
-                      </li>
+                  <div class="col-sm-4">
+                    <div class="current-temperature">
+                      70 <span class="units">°C | <a href="#">°F</a></span>
+                    </div>
+                    <div class="current-weather">
+                      <ul>
+                        <li>
+                          <span class="precipitation">Precipitation: 1%</span>
+                        </li>
 
-                      <li><span class="humidity">Humidity: 75%</span></li>
-                      <li><span class="wind">Wind: 0 mph</span></li>
-                    </ul>
+                        <li><span class="humidity">Humidity: 75%</span></li>
+                        <li><span class="wind">Wind: 0 mph</span></li>
+                      </ul>
+                    </div>
                   </div>
-
-                  <div class="col-sm-9">
+                  <div class="col-sm-8">
                     <div class="projected-forecast">
                       5-Day Projected Forecast
                     </div>

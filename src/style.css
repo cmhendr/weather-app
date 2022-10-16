@@ -5,14 +5,21 @@ ul {
 }
 
 footer {
-  text-align: right;
+  bottom: 115px;
+  color: #000000;
   padding: 0 10px 0 0;
+  position: fixed;
+  right: 420px;
+  text-align: right;
+}
+
+.city-name .projected-forecast .current-weather {
+  font-family: "Cabin Sketch", cursive;
 }
 
 .background {
   display: block;
   margin: 0 auto;
-  padding: 0 0 30px 0;
   position: fixed;
   top: 100px;
   width: 85%;
@@ -28,26 +35,30 @@ footer {
   box-sizing: border-box;
   max-width: 250px;
   position: fixed;
+  right: 650px;
   top: 125px;
-  right: 330px;
 }
 
-.search-city-btn {
+.btn-search {
+  color: rgba(0, 0, 255, 0.479) !important;
   position: fixed;
   top: 125px;
-  right: 230px;
+  right: 550px;
 }
 
-.get-current-btn {
+.btn-current {
+  background: rgba(0, 0, 255, 0.637) !important;
+  border: rgba(0, 0, 255, 0.637) !important;
+  color: white !important;
   position: fixed;
-  top: 175px;
-  right: 500px;
+  top: 125px;
+  right: 450px;
 }
 
 .box-body {
-  align-items: center;
+  align-items: top;
   background: rgba(206, 206, 206, 0.096);
-  backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(50px);
   border-radius: 30px;
   box-sizing: content-box;
   display: block;
@@ -59,13 +70,29 @@ footer {
 }
 
 .current-temperature {
-  font-size: 6em;
+  font-size: 8em;
   padding: 0 0 30px;
+  position: relative;
+  top: -100px;
+}
+
+.current-weather {
+  font-size: 1.5em;
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  top: 200px;
+}
+
+.units {
+  font-size: 0.2em !important;
+  position: relative;
+  top: -60px;
 }
 
 .projected-forecast {
-  font-size: 1.7em;
-  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2.5em;
   padding: 0 0 30px;
 }
 
@@ -90,11 +117,4 @@ footer {
 .forecast-day {
   color: #ffffff;
   font-size: 1.3em;
-}
-
-footer {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 145px;
-  right: 205px;
 }
