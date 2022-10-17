@@ -130,3 +130,17 @@ footer {
   color: #ffffff;
   font-size: 1.2em;
 }
+
+.current-time {
+  text-align: center;
+
+  margin: 35px 0 0;
+}
+
+.date {
+  font-size: 1.5em;
+}
+
+.time {
+  font-size: 3em;
+}
