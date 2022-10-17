@@ -80,11 +80,19 @@ footer {
 
 .current-weather {
   font-family: "Gruppo", cursive;
-  font-size: 1.2em;
+  font-size: 1em;
   display: block;
   margin: 0 auto;
   position: fixed;
   top: 225px;
+  text-align: left;
+}
+
+.main-icon {
+  font-size: 4em;
+  position: fixed;
+  top: 250px;
+  left: 175px;
 }
 
 .units {
