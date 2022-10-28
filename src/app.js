@@ -17,16 +17,8 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday",
   ];
-  let date = days[date.getDay()];
+  let day = days[date.getDay()];
   return `${day} ${hours}: ${minutes}`;
-}
-
-function search(city) {
-  let apiKey = "1d038ee28ef2727a9f0310860ac10ae9";
-  let city = "Paris";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-
-  axios.get(apiUrl).then(displayTemperature);
 }
 
 function displayTemperature(response) {
@@ -44,3 +36,9 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate((response.data.dt = 1000));
 }
+
+let apiKey = "3dce9b1c66837262a25b3f448d354a76";
+let city = "Paris";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+axios.get(apiUrl).then(displayTemperature);

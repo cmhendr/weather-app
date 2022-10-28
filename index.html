@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -61,22 +62,27 @@
               <div class="box-container text-center">
                 <div class="row">
                   <div class="col-sm-4">
-                    <div class="current-temperature">
-                      70 <span class="units">°C | <a href="#">°F</a></span>
+                    <div>
+                      <span class="current-temperature" id="temperature"></span>
+                      <span class="units">°C | <a href="#">°F</a></span>
                     </div>
-
                     <div class="row">
                       <div class="current-weather">
                         <div class="col-sm-6">
                           <ul>
                             <li>
-                              <span class="precipitation"
-                                >Precipitation: 1%</span
-                              >
+                              <span
+                                class="precipitation"
+                                id="precipitation"
+                              ></span>
                             </li>
 
-                            <li><span class="humidity">Humidity: 75%</span></li>
-                            <li><span class="wind">Wind: 0 mph</span></li>
+                            <li>
+                              <span class="humidity" id="humidity"></span>
+                            </li>
+                            <li>
+                              <span class="wind" id="wind"></span>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -163,13 +169,19 @@
               ><small> by Candace Hendricks</small>
             </footer>
             <div class="current-time">
-              <span class="date">Sunday, October 16, 2022</span>
-              <span class="time">16:14PM</span>
+              <div class="date">
+                <span class="day" id="day"></span>
+                <span class="time"
+                  ><span class="hours" id="hours"></span
+                  ><span class="minutes" id="minutes"></span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </form>
     </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
