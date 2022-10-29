@@ -41,7 +41,7 @@
             alt="A white mountain stands tall behind a forest and under a purple and blue night sky, littered with stars. A comet streaks across the scene in the background."
           />
           <div class="card-img-overlay">
-            <div class="city-name">Chicago</div>
+            <div class="city-name" id="city"></div>
 
             <input
               class="form-control city-search-bar"
@@ -71,18 +71,10 @@
                         <div class="col-sm-6">
                           <ul>
                             <li>
-                              <span
-                                class="precipitation"
-                                id="precipitation"
-                              ></span>
+                              <span id="description"></span>
                             </li>
-
-                            <li>
-                              <span class="humidity" id="humidity"></span>
-                            </li>
-                            <li>
-                              <span class="wind" id="wind"></span>
-                            </li>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span> km/h</li>
                           </ul>
                         </div>
                       </div>
