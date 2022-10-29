@@ -80,19 +80,20 @@ footer {
 
 .current-weather {
   font-family: "Gruppo", cursive;
-  font-size: 1em;
+  font-size: 1.5em;
   display: block;
   margin: 0 auto;
   position: fixed;
-  top: 225px;
+  top: 200px;
   text-align: left;
+  left: 140px;
 }
 
 .main-icon {
-  font-size: 4em;
+  font-size: 5em;
   position: fixed;
-  top: 250px;
-  left: 175px;
+  top: 200px;
+  left: 50px;
 }
 
 .units {
@@ -117,7 +118,7 @@ footer {
   backdrop-filter: saturate(180%) blur(10px);
   border: none;
   border-radius: 30px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -133,15 +134,11 @@ footer {
 }
 
 .current-time {
-  text-align: center;
-
-  margin: 35px 0 0;
+  font-size: 4em;
 }
-
-.date {
+.current-date {
   font-size: 1.5em;
-}
-
-.time {
-  font-size: 3em;
+  text-align: center;
+  font-family: "Gruppo", cursive;
+  margin: 35px 0 0;
 }
