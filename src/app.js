@@ -1,13 +1,15 @@
 function formatDate(timestamp) {
-  let date = new Date(timestamp);
-  let hours = date.getHours();
+  let now = new Date(timestamp);
+  let date = now.getDate();
+  let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = date.getMinutes();
+  let minutes = now.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+  let year = now.getFullYear();
   let days = [
     "Sunday",
     "Monday",
@@ -17,12 +19,26 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday",
   ];
-  let day = days[date.getDay()];
-  return `${day} ${hours}:${minutes}`;
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let day = days[now.getDay()];
+  let month = months[now.getMonth()];
+  return `${day}, ${month} ${date}, ${year}, ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -38,7 +54,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "3dce9b1c66837262a25b3f448d354a76";
-let city = "Paris";
+let city = "Chicago";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);

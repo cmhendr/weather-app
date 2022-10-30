@@ -133,12 +133,10 @@ footer {
   font-size: 1.2em;
 }
 
-.current-time {
-  font-size: 4em;
-}
 .current-date {
-  font-size: 1.5em;
-  text-align: center;
+  color: #ffffff;
   font-family: "Gruppo", cursive;
-  margin: 35px 0 0;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 50px 0 0 0;
 }
