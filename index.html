@@ -33,30 +33,41 @@
 
   <body>
     <div class="container">
-      <form>
+      <form id="search-form" class="mb-3">
         <div class="card text-bg-dark background">
           <img
             src="images/night-mountain.jpg"
             class="card-img"
             alt="A white mountain stands tall behind a forest and under a purple and blue night sky, littered with stars. A comet streaks across the scene in the background."
           />
-          <div class="card-img-overlay">
-            <div class="city-name" id="city"></div>
 
-            <input
-              class="form-control city-search-bar"
-              type="text"
-              placeholder="Search for a city...🔍"
-              autocomplete="off"
-              autofocus="on"
-              aria-label="default input example"
-            />
-            <button type="button" class="btn btn-light btn-search">
-              Search
-            </button>
-            <button type="button" class="btn btn-warning btn-current">
-              Current
-            </button>
+          <div class="card-img-overlay">
+            <div class="row">
+              <div class="col-9">
+                <div class="city-name" id="city"></div>
+                <input
+                  class="form-control city-search-bar"
+                  type="search"
+                  placeholder="Search for a city...🔍"
+                  autocomplete="off"
+                  autofocus="on"
+                  aria-label="default input example"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-light btn-search"
+                />
+                <input
+                  type="submit"
+                  value="Current"
+                  class="btn btn-warning btn-current"
+                />
+              </div>
+            </div>
 
             <div class="box-body">
               <div class="box-container text-center">
@@ -82,7 +93,7 @@
                         <div class="d-flex weather-temperature icon">
                           <img
                             src=""
-                            alt="clear"
+                            alt="Clear"
                             id="icon"
                             class="float-left"
                           />
