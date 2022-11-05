@@ -37,7 +37,7 @@ footer {
 }
 
 .btn-search {
-  color: rgba(0, 0, 255, 0.479) !important;
+  color: rgba(0, 0, 209, 0.747) !important;
   position: fixed;
   top: 125px;
   right: 550px;
@@ -102,6 +102,16 @@ footer {
   position: relative;
   top: -150px;
   left: 20px;
+}
+
+.temperature-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.temperature-link:hover,
+.temperature-link:focus {
+  color: #0b1b3d;
 }
 
 .projected-forecast {
