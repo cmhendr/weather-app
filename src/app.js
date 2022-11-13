@@ -38,6 +38,42 @@ function formatDate(timestamp) {
   return `${day}, ${month} ${date}, ${year}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = ` <div class="forecast-card-body">
+                          <div class="forecast-container"><div class="row">`;
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                        
+                            
+                              <div class="col-4">
+                                <div class="forecast-day">${day}</div>
+
+                                <div class="forecast-temp">
+                                  <span class="forecast-temperature-max"
+                                    ><strong>66°</strong></span
+                                  >/<span class="forecast-temperature-min"
+                                    >43°</span
+                                  >F
+                                </div>
+                                
+                                  <img
+                                    src="http://openweathermap.org/img/wn/10d@2x.png"
+                                    alt=""
+                                    width="42"
+                                  />
+                                
+                              </div>
+                                                         
+`;
+  });
+  forecastHTML = forecastHTML + `</div></div></div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -76,3 +112,4 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 search("Chicago");
+displayForecast();
