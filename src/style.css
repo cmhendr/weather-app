@@ -43,19 +43,6 @@ footer {
   right: 550px;
 }
 
-.btn-current {
-  background: rgba(0, 0, 255, 0.637) !important;
-  border: rgba(0, 0, 255, 0.637) !important;
-  color: white !important;
-  position: fixed;
-  top: 125px;
-  right: 450px;
-}
-
-.btn-current:hover {
-  background: rgba(4, 0, 122, 0.637) !important;
-}
-
 .box-body {
   align-items: top;
   background: rgba(206, 206, 206, 0.096);
@@ -80,7 +67,7 @@ footer {
 
 .current-weather {
   font-family: "Gruppo", cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: block;
   margin: 0 auto;
   position: fixed;
