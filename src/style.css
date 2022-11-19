@@ -67,20 +67,19 @@ footer {
 
 .current-weather {
   font-family: "Gruppo", cursive;
-  font-size: 1.5em;
+  font-size: 1.3em;
   display: block;
   margin: 0 auto;
   position: fixed;
   top: 200px;
   text-align: left;
-  left: 140px;
+  left: 70px;
 }
 
 .icon {
   font-size: 5em;
   position: fixed;
   top: 200px;
-  left: 50px;
 }
 
 .units {
@@ -96,7 +95,7 @@ footer {
   font-size: 2.25em;
   position: fixed;
   top: 30px;
-  right: 110px;
+  right: 140px;
 }
 
 .card.forecast {
@@ -105,13 +104,11 @@ footer {
   backdrop-filter: saturate(180%) blur(10px);
   border: none;
   border-radius: 30px;
-  font-size: 1.25em;
+  font-size: 1.35em;
   text-align: center;
   display: block;
   margin: 0 auto;
-  position: fixed;
-  top: 100px;
-  right: 50px;
+  position: relative;
 }
 
 .forecast-day {
