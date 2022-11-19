@@ -32,7 +32,7 @@ footer {
   box-sizing: border-box;
   max-width: 250px;
   position: fixed;
-  right: 650px;
+  right: 550px;
   top: 125px;
 }
 
@@ -40,7 +40,7 @@ footer {
   color: rgba(0, 0, 209, 0.747) !important;
   position: fixed;
   top: 125px;
-  right: 550px;
+  right: 450px;
 }
 
 .box-body {
